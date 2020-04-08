@@ -6,22 +6,38 @@ var map = L.map('map', {
   scrollWheelZoom: true
 });
 
+var Thunderforest_MobileAtlas = L.tileLayer('https://{s}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey={apikey}', {
+  attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  apikey: '<your apikey>',var positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+        attribution: '©OpenStreetMap, ©CartoDB'
+}).addTo(map);
+
+var positronLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
+        attribution: '©OpenStreetMap, ©CartoDB',
+        pane: 'labels'
+}).addTo(map);
+
+var geojson = L.geoJson(GeoJsonData, geoJsonOptions).addTo(map);
+  
+});
+
 // Edit links to your GitHub repo and data source credit
 map.attributionControl
 .setPrefix('View <a href="https://github.com/monsoonforest/senior-citizens-bengaluru">open-source code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 map.attributionControl.addAttribution('Population data &copy; <a href="https://eci.gov.in/">ECI India </a>');
 
-// Basemap layer
-new L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-}).addTo(map);
+// // Basemap layer
+// new L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+//   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+// }).addTo(map);
+
 
 // Edit to upload GeoJSON data file from your local directory
 $.getJSON("bengaluru-wards-joined.geojson", function (data) {
   geoJsonLayer = L.geoJson(data, {
     style: style,
     onEachFeature: onEachFeature
-  }).addTo(map);
+  })
 });
 
 // Edit ranges and colors to match your data; see http://colorbrewer.org
@@ -33,7 +49,7 @@ function getColor(d) {
          d > 10  ? '#20908d' :
          d > 5   ? '#35b779' :
          d > 2.5 ? '#8fd744' :
-         d > 0.5 ? '#fde725' :
+         d > 0.5 ? '#463144' :
                     '#FFEDA0';
 }
 
@@ -44,7 +60,7 @@ function style(feature) {
     weight: 1,
     opacity: 1,
     color: 'black',
-    fillOpacity: 0.6
+    fillOpacity: 0.4
   };
 }
 
