@@ -6,7 +6,7 @@ var map = L.map('map', {
   scrollWheelZoom: true
 });
 
-var Thunderforest_MobileAtlas = L.tileLayer('https://{s}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey={apikey}', {
+new L.tileLayer('https://{s}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey={apikey}', {
   attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   apikey: '<your apikey>',var positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
         attribution: '©OpenStreetMap, ©CartoDB'
@@ -39,6 +39,25 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
     onEachFeature: onEachFeature
   })
 });
+
+var rrptstyl = {
+    "color": "#ff7800",
+    "weight": 5,
+    "opacity": 0.65
+};
+
+$.getJSON("relief-riders.geojson", function (data) {
+  geoJsonLayer = L.geoJson(data, {
+    style: rrptstyl,
+    onEachFeature: onEachFeature
+  })
+});
+
+
+
+L.geoJSON(myLines, {
+    style: myStyle
+}).addTo(map);
 
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
@@ -107,7 +126,7 @@ info.onAdd = function (map) {
 // Edit info box text and variables (such as elderly density 2014) to match those in your GeoJSON data
 info.update = function (props) {
   this._div.innerHTML = '<h4>Bengaluru City<br />Population of Senior Citizens in 2014</h4>' +  (props ?
-    '<b>' + props.Ward_Name + ' '  + props.Ward_Area + ' Acres' + '</b><br />' +  props.Total + ' Senior Citizens' + '<br />' + props.Elderly_Density + ' Senior Citizens per acre'
+    '<b>' + props.Ward_Name + ' '  + props.Ward_Area + ' Acres' + '</b><br />' '<b>'+  props.Total + ' Senior Citizens' + '<b><br />' + props.Elderly_Density + ' Senior Citizens per acre'
     : 'Hover over a Ward');
 };
 info.addTo(map);
