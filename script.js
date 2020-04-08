@@ -1,7 +1,7 @@
 // Edit the center point and zoom level
 var map = L.map('map', {
   center: [12.9761232,77.5918883],
-  zoom: 12  ,
+  zoom: 11  ,
   minZoom : 11,
   scrollWheelZoom: true
 });
@@ -27,13 +27,13 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
 function getColor(d) {
-  return d < 60 ? '#fde725' :
-         d < 40 ? '#8fd744' :
-         d < 20  ? '#35b779' :
-         d < 10  ? '#20908d' :
-         d < 5  ? '#31688e' :
-         d < 2.5   ? '#443a83' :
-         d < 0.5   ? '##440154' :
+  return d > 60 ? '#fde725' :
+         d > 40 ? '#8fd744' :
+         d > 20  ? '#35b779' :
+         d > 10  ? '#20908d' :
+         d > 5  ? '#31688e' :
+         d > 2.5   ? '#443a83' :
+         d > 0.5   ? '##440154' :
                     '#FFEDA0';
 }
 
@@ -101,7 +101,7 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [50 ,40 ,30 ,10 ,5  ,2.5,0.5],
+    grades = [60 ,40 ,30 ,10 ,5  ,2.5,0.5],
     labels = ['<strong> Senior Citizens Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
