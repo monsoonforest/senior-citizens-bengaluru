@@ -1,0 +1,199 @@
+Ward_Number,Ward_Name,Zone,Division,Subdivision,Assembly_Constituency,Parliamentary_Constituency,Female_above_60_2014,Male_above_60_2014,Other_above_60_2014,Total
+1,Kempegowda Ward,Yelahanka,Yelahanka,Yelahanka,Yelahanka,Chikballapur,2100,2579,1,4680
+2,Chowdeswari Ward,Yelahanka,Yelahanka,Yelahanka,Yelahanka,Chikballapur,1661,2107,1,3769
+3,Atturu,Yelahanka,Yelahanka,Yelahanka,Yelahanka,Chikballapur,3108,3568,1,6677
+4,Yelahanka Satellite Town,Yelahanka,Yelahanka,Yelahanka,Yelahanka,Chikballapur,2902,3448,,6350
+5,Jakkuru,Yelahanka,Byatarayanapura,Byatarayanapura,Byatarayanapura,Bangalore North,2435,2787,,5222
+6,Thanisandra,Yelahanka,Byatarayanapura,Byatarayanapura,Byatarayanapura,Bangalore North,3595,4477,,8072
+7,Byatarayanapura,Yelahanka,Byatarayanapura,Byatarayanapura,Byatarayanapura,Bangalore North,4086,4690,,8776
+8,Kodigehalli,Yelahanka,Byatarayanapura,Byatarayanapura,Byatarayanapura,Bangalore North,2868,3138,,6006
+9,Vidyaranyapura,Yelahanka,Byatarayanapura,Vidyaranyapura,Byatarayanapura,Bangalore North,4866,5298,,10164
+10,Dodda Bommasandra,Yelahanka,Byatarayanapura,Vidyaranyapura,Byatarayanapura,Bangalore North,2144,2507,,4651
+11,Kuvempu Nagar,Yelahanka,Byatarayanapura,Vidyaranyapura,Byatarayanapura,Bangalore North,1635,1811,,3446
+12,Shettihalli,Dasarahalli,Dasarahalli,Shetty halli,Dasarahalli,Bangalore North,3323,3860,,7183
+13,Mallasandra,Dasarahalli,Dasarahalli,Shetty halli,Dasarahalli,Bangalore North,1465,1982,,3447
+14,Bagalakunte,Dasarahalli,Dasarahalli,T.Dasarahalli,Dasarahalli,Bangalore North,2447,3341,2,5790
+15,T Dasarahalli,Dasarahalli,Dasarahalli,T.Dasarahalli,Dasarahalli,Bangalore North,1766,2244,,4010
+16,Jalahalli,Rajarajeswari Nagar,Yeshwanthpura,Yeshwanthpura,Rajarajeswari Nagar,Bangalore North,1866,2130,,3996
+17,J P Park,Rajarajeswari Nagar,Yeshwanthpura,Yeshwanthpura,Rajarajeswari Nagar,Bangalore North,3426,3889,,7315
+18,Radhakrishna Temple Ward,East,Hebbal,Hebbal,Hebbal,Bangalore North,3039,3435,,6474
+19,SanJayanagar,East,Hebbal,Hebbal,Hebbal,Bangalore North,2722,3003,,5725
+20,Ganga Nagar,East,Hebbal,Hebbal,Hebbal,Bangalore North,1931,2153,,4084
+21,Hebbala,East,Hebbal,Hebbal,Hebbal,Bangalore North,1999,2254,1,4254
+22,Vishwanath Nagenahalli,East,Hebbal,J.C. Nagar,Hebbal,Bangalore North,2980,3473,,6453
+23,Nagavara,East,Sarvajna Nagar,HBR Layout,Sarvagna Nagar,Bangalore Central,2638,3177,,5815
+24,HBR Layout,East,Sarvajna Nagar,HBR Layout,Sarvagna Nagar,Bangalore Central,3533,3930,1,7464
+25,Horamavu,Mahadevapura,K.R.Puram,Horamaavu,K.R. Puram,Bangalore North,5581,6268,1,11850
+26,Ramamurthy Nagar,Mahadevapura,K.R.Puram,Horamaavu,K.R. Puram,Bangalore North,2927,3266,,6193
+27,Banasavadi,East,Sarvajna Nagar,Maruthi Seva Nagar,Sarvagna Nagar,Bangalore Central,3568,4019,,7587
+28,Kammanahalli,East,Sarvajna Nagar,Maruthi Seva Nagar,Sarvagna Nagar,Bangalore Central,3308,3667,,6975
+29,Kacharkanahalli,East,Sarvajna Nagar,Maruthi Seva Nagar,Sarvagna Nagar,Bangalore Central,2471,2597,,5068
+30,Kadugondanahalli,East,Sarvajna Nagar,HBR Layout,Sarvagna Nagar,Bangalore Central,2570,3064,,5634
+31,Kushal Nagar,East,Pulikeshi Nagar,K.G. Halli,Pulakeshi Nagar (SC),Bangalore North,1769,2042,,3811
+32,Kaval Bairasandra,East,Pulikeshi Nagar,K.G. Halli,Pulakeshi Nagar (SC),Bangalore North,2313,2777,1,5091
+33,Manorayana Palya,East,Hebbal,J.C. Nagar,Hebbal,Bangalore North,2164,2584,,4748
+34,Gangenahalli,East,Hebbal,J.C. Nagar,Hebbal,Bangalore North,1497,1796,,3293
+35,Aramane Nagara,West,Malleshwaram,Mattikere,Malleshwaram,Bangalore North,2321,2455,,4776
+36,Mattikere,West,Malleshwaram,Mattikere,Malleshwaram,Bangalore North,2389,2458,,4847
+37,Yeshwanthpura,Rajarajeswari Nagar,Yeshwanthpura,Yeshwanthpura,Rajarajeswari Nagar,Bangalore North,2573,2915,,5488
+38,HMT Ward,Rajarajeswari Nagar,Yeshwanthpura,Goraguntepalya,Rajarajeswari Nagar,Bangalore North,1547,1868,,3415
+39,Chokkasandra,Dasarahalli,Hegganahalli,Peenya Industrial Town,Dasarahalli,Bangalore North,1778,2430,,4208
+40,Dodda Bidarakallu,Rajarajeswari Nagar,Kengeri,Herohalli,Yeshwantpura,Bangalore North,2663,3170,,5833
+41,Peenya Industrial Area,Dasarahalli,Hegganahalli,Peenya Industrial Town,Dasarahalli,Bangalore North,1378,1845,5,3228
+42,Lakshmi Devi Nagar,Rajarajeswari Nagar,Yeshwanthpura,Goraguntepalya,Rajarajeswari Nagar,Bangalore North,1311,1604,,2915
+43,Nandini Layout,West,Mahalakshmi Layout,Mahalakshmi Layout,Mahalakshmi Layout,Bangalore North,2705,3293,,5998
+44,Marappana Palya,West,Mahalakshmi Layout,Mahalakshmi Layout,Mahalakshmi Layout,Bangalore North,2314,2472,,4786
+45,Malleshwaram,West,Malleshwaram,Mattikere,Malleshwaram,Bangalore North,2142,2247,,4389
+46,Jayachamarajendra Nagar,East,Hebbal,J.C. Nagar,Hebbal,Bangalore North,2420,2495,,4915
+47,Devara Jeevanahalli,East,Pulikeshi Nagar,Pulikeshi Nagar,Pulakeshi Nagar (SC),Bangalore North,1912,2118,,4030
+48,Muneshwara Nagar,East,Pulikeshi Nagar,K.G. Halli,Pulakeshi Nagar (SC),Bangalore North,1499,1613,,3112
+49,Lingarajapura,East,Sarvajna Nagar,Maruthi Seva Nagar,Sarvagna Nagar,Bangalore Central,2368,2282,1,4651
+50,Benniganahalli,East,C.V.Raman Nagar,C.V.Raman Nagar,C.V. Ramannagar (SC),Bangalore Central,2642,2925,,5567
+51,Vijnanapura,Mahadevapura,K.R.Puram,Horamaavu,K.R. Puram,Bangalore North,2924,3290,,6214
+52,KR Puram,Mahadevapura,K.R.Puram,K.R.Puram,K.R. Puram,Bangalore North,2795,3277,,6072
+53,Basavanapura,Mahadevapura,K.R.Puram,K.R.Puram,K.R. Puram,Bangalore North,2307,2667,1,4975
+54,Hudi,Mahadevapura,Mahadevapura,Hoodi,Mahadevapura,Bangalore Central,2227,2498,1,4726
+55,Devasandra,Mahadevapura,K.R.Puram,K.R.Puram,K.R. Puram,Bangalore North,1341,1607,1,2949
+56,A Narayanapura,Mahadevapura,K.R.Puram,HAL. Airport,K.R. Puram,Bangalore North,2363,2686,,5049
+57,C.V. Raman Nagar,East,C.V.Raman Nagar,C.V.Raman Nagar,C.V. Ramannagar (SC),Bangalore Central,2169,2708,1,4878
+58,New Tippa Sandra,East,C.V.Raman Nagar,C.V.Raman Nagar,C.V. Ramannagar (SC),Bangalore Central,2629,2970,,5599
+59,Maruthi Seva Nagar,East,Sarvajna Nagar,Maruthi Seva Nagar,Sarvagna Nagar,Bangalore Central,3533,3467,1,7001
+60,Sagayara Puram,East,Pulikeshi Nagar,K.G. Halli,Pulakeshi Nagar (SC),Bangalore North,2151,2134,,4285
+61,SK Garden,East,Pulikeshi Nagar,Pulikeshi Nagar,Pulakeshi Nagar (SC),Bangalore North,1626,1672,,3298
+62,Ramaswamy Palya,East,Shivaji Nagar,Vasanth Nagar,Shivaji Nagar,Bangalore Central,2555,2651,,5206
+63,Jaya Mahal,East,Shivaji Nagar,Vasanth Nagar,Shivaji Nagar,Bangalore Central,2134,2334,,4468
+64,Raj Mahal Guttahalli,West,Malleshwaram,Malleshwaram,Malleshwaram,Bangalore North,2578,2556,,5134
+65,Kadu Malleshwar Ward,West,Malleshwaram,Malleshwaram,Malleshwaram,Bangalore North,2896,2799,,5695
+66,Subramanya Nagar,West,Malleshwaram,Malleshwaram,Malleshwaram,Bangalore North,3560,3631,,7191
+67,Nagapura,West,Mahalakshmi Layout,Naagapura,Mahalakshmi Layout,Bangalore North,3004,3093,,6097
+68,Mahalakshmipuram,West,Mahalakshmi Layout,Mahalakshmi Layout,Mahalakshmi Layout,Bangalore North,2867,3123,,5990
+69,Laggere,Rajarajeswari Nagar,Rajarajeshwari Nagar,Laggere,Rajarajeswari Nagar,Bangalore North,2026,2366,,4392
+70,Rajagopal Nagar,Dasarahalli,Hegganahalli,Hegganahalli,Dasarahalli,Bangalore North,1406,1779,,3185
+71,Hegganahalli,Dasarahalli,Hegganahalli,Hegganahalli,Dasarahalli,Bangalore North,1719,2241,,3960
+72,Herohalli,Rajarajeswari Nagar,Kengeri,Herohalli,Yeshwantpura,Bangalore North,3051,3674,,6725
+73,Kottegepalya,Rajarajeswari Nagar,Rajarajeshwari Nagar,Laggere,Rajarajeswari Nagar,Bangalore North,3233,4033,,7266
+74,Shakthi Ganapathi Nagar,West,Mahalakshmi Layout,Mahalakshmi Layout,Mahalakshmi Layout,Bangalore North,3180,3334,,6514
+75,Shankar Matt,West,Mahalakshmi Layout,Naagapura,Mahalakshmi Layout,Bangalore North,2964,3143,,6107
+76,Gayithri Nagar,West,Malleshwaram,Malleshwaram,Malleshwaram,Bangalore North,3151,3258,,6409
+77,Dattatreya Temple Ward,West,Gandhi Nagar,Gandhi Nagar,Gandhi Nagar,Bangalore Central,3076,3235,1,6312
+78,Pulakeshi Nagar,East,Pulikeshi Nagar,Pulikeshi Nagar,Pulakeshi Nagar (SC),Bangalore North,2560,2599,,5159
+79,Sarvagna Nagar,East,C.V.Raman Nagar,C.V.Raman Nagar,C.V. Ramannagar (SC),Bangalore Central,2442,2458,,4900
+80,Hoysala Nagar,East,C.V.Raman Nagar,Jeevanbheema Nagar,C.V. Ramannagar (SC),Bangalore Central,2997,2925,1,5923
+81,Vijnana Nagar,Mahadevapura,K.R.Puram,HAL. Airport,K.R. Puram,Bangalore North,2722,3309,,6031
+82,Garudachar palya,Mahadevapura,Mahadevapura,Hoodi,Mahadevapura,Bangalore Central,1525,1842,,3367
+83,Kadugodi,Mahadevapura,Mahadevapura,White Field,Mahadevapura,Bangalore Central,1947,2235,,4182
+84,Hagadur,Mahadevapura,Mahadevapura,White Field,Mahadevapura,Bangalore Central,2458,2734,,5192
+85,Dodda Nekkundi,Mahadevapura,Mahadevapura,Hoodi,Mahadevapura,Bangalore Central,2890,3184,,6074
+86,Marathahalli,Mahadevapura,Mahadevapura,Maarathahalli,Mahadevapura,Bangalore Central,1593,1752,,3345
+87,HAL Airport,Mahadevapura,K.R.Puram,HAL. Airport,K.R. Puram,Bangalore North,2471,2800,,5271
+88,Jeevanbhima Nagar,East,C.V.Raman Nagar,Jeevanbheema Nagar,C.V. Ramannagar (SC),Bangalore Central,2734,3012,1,5747
+89,Jogupalya,East,Shanti Nagar,Dommalooru,Shanthi Nagar,Bangalore Central,2373,2611,,4984
+90,Halsoor,East,Shivaji Nagar,Shivaji Nagar,Shivaji Nagar,Bangalore Central,3101,3165,,6266
+91,Bharathi Nagar,East,Shivaji Nagar,Shivaji Nagar,Shivaji Nagar,Bangalore Central,3435,3808,1,7244
+92,Shivaji Nagar,East,Shivaji Nagar,Shivaji Nagar,Shivaji Nagar,Bangalore Central,1370,1593,,2963
+93,Vasanth Nagar,East,Shivaji Nagar,Vasanth Nagar,Shivaji Nagar,Bangalore Central,2673,2830,,5503
+94,Gandhi Nagar,West,Gandhi Nagar,Gandhi Nagar,Gandhi Nagar,Bangalore Central,2161,2397,,4558
+95,Subhash Nagar,West,Gandhi Nagar,Gandhi Nagar,Gandhi Nagar,Bangalore Central,1935,1936,,3871
+96,Okalipuram,West,Gandhi Nagar,Gandhi Nagar,Gandhi Nagar,Bangalore Central,2832,2975,,5807
+97,Dayananda Nagar,West,Rajajinagar,Srirama Mandir,Rajaji Nagar,Bangalore Central,2583,2608,,5191
+98,Prakash Nagar,West,Rajajinagar,Srirama Mandir,Rajaji Nagar,Bangalore Central,2247,2394,,4641
+99,Rajaji Nagar,West,Rajajinagar,Rajajinagar,Rajaji Nagar,Bangalore Central,2423,2551,,4974
+100,Basaveshwara Nagar,West,Rajajinagar,Rajajinagar,Rajaji Nagar,Bangalore Central,2345,2567,,4912
+101,Kamakshipalya,West,Rajajinagar,Rajajinagar,Rajaji Nagar,Bangalore Central,1970,2164,,4134
+102,Vrisahbhavathi Nagar,West,Mahalakshmi Layout,Naagapura,Mahalakshmi Layout,Bangalore North,2271,2621,,4892
+103,Kaveripura,West,Govindaraj Nagar,Govindaraj Nagar,Govindaraja Nagar,Bangalore South,3237,3706,,6943
+104,Govindaraja Nagar,West,Govindaraj Nagar,Govindaraj Nagar,Govindaraja Nagar,Bangalore South,1462,1642,,3104
+105,Agrahara Dasarahalli,West,Govindaraj Nagar,Govindaraj Nagar,Govindaraja Nagar,Bangalore South,1279,1399,,2678
+106,Dr.Raj Kumar Ward,West,Govindaraj Nagar,Govindaraj Nagar,Govindaraja Nagar,Bangalore South,1777,2015,,3792
+107,Shiva Nagar,West,Rajajinagar,Rajajinagar,Rajaji Nagar,Bangalore Central,2199,2348,,4547
+108,Sri Rama Mandir Ward,West,Rajajinagar,Srirama Mandir,Rajaji Nagar,Bangalore Central,3089,3229,,6318
+109,Chickpete,West,Gandhi Nagar,Chikpet,Gandhi Nagar,Bangalore Central,2112,2408,,4520
+110,Sampangiram Nagar,East,Shivaji Nagar,Vasanth Nagar,Shivaji Nagar,Bangalore Central,1994,2058,,4052
+111,Shantala Nagar,East,Shanti Nagar,Shanti Nagar,Shanthi Nagar,Bangalore Central,2617,2433,,5050
+112,Domlur,East,Shanti Nagar,Dommalooru,Shanthi Nagar,Bangalore Central,2747,2994,,5741
+113,Konena Agrahara,East,C.V.Raman Nagar,Jeevanbheema Nagar,C.V. Ramannagar (SC),Bangalore Central,1795,1899,1,3695
+114,Agaram,East,Shanti Nagar,Dommalooru,Shanthi Nagar,Bangalore Central,1813,1714,,3527
+115,Vannar Pet,East,Shanti Nagar,Dommalooru,Shanthi Nagar,Bangalore Central,2193,2218,,4411
+116,Nilasandra,East,Shanti Nagar,Shanti Nagar,Shanthi Nagar,Bangalore Central,2048,2233,,4281
+117,Shanthi Nagar,East,Shanti Nagar,Shanti Nagar,Shanthi Nagar,Bangalore Central,2887,2869,,5756
+118,Sudham Nagar,South,Chikpete,Kempegowda Nagar,Chickpet,Bangalore South,1841,1754,,3595
+119,Dharmaraya Swamy Temple,South,Chikpete,Kempegowda Nagar,Chickpet,Bangalore South,1868,2070,,3938
+120,Cottonpete,West,Gandhi Nagar,Chikpet,Gandhi Nagar,Bangalore Central,2846,3064,,5910
+121,Binni Pete,West,Gandhi Nagar,Chikpet,Gandhi Nagar,Bangalore Central,2434,2457,,4891
+122,Kempapura Agrahara,South,Vijay Nagar,Vijay Nagar,ViJayanagar,Bangalore South,2070,2172,,4242
+123,ViJayanagar,South,Vijay Nagar,Vijay Nagar,ViJayanagar,Bangalore South,3158,3408,,6566
+124,Hosahalli,South,Vijay Nagar,Vijay Nagar,ViJayanagar,Bangalore South,2269,2507,,4776
+125,Marenahalli,West,Govindaraj Nagar,Govindaraj Nagar,Govindaraja Nagar,Bangalore South,2079,2272,,4351
+126,Maruthi Mandir Ward,West,Govindaraj Nagar,Chandra Layout,Govindaraja Nagar,Bangalore South,2551,2925,,5476
+127,Mudalapalya,West,Govindaraj Nagar,Chandra Layout,Govindaraja Nagar,Bangalore South,2683,3133,,5816
+128,Nagarabhavi,West,Govindaraj Nagar,Chandra Layout,Govindaraja Nagar,Bangalore South,1396,1633,,3029
+129,Jnana Bharathi Ward,Rajarajeswari Nagar,Rajarajeshwari Nagar,Rajarajeshwari Nagar,Rajarajeswari Nagar,Bangalore North,3691,4562,,8253
+130,Ullalu,Rajarajeswari Nagar,Kengeri,Kengeri,Yeshwantpura,Bangalore North,3550,3928,1,7479
+131,Nayandahalli,West,Govindaraj Nagar,Chandra Layout,Govindaraja Nagar,Bangalore South,1671,2206,,3877
+132,Attiguppe,South,Vijay Nagar,Gaali Anjaneya Temple,ViJayanagar,Bangalore South,2125,2476,,4601
+133,Hampi Nagar,South,Vijay Nagar,Gaali Anjaneya Temple,ViJayanagar,Bangalore South,1882,2122,,4004
+134,Bapuji Nagar,South,Vijay Nagar,Vijay Nagar,ViJayanagar,Bangalore South,1174,1274,,2448
+135,Padarayanapura,West,Chamarajpete,Jagajeevanram Nagar,Chamarajpet,Bangalore Central,2277,2573,,4850
+136,Jagajivanaram Nagar,West,Chamarajpete,Jagajeevanram Nagar,Chamarajpet,Bangalore Central,1827,1874,1,3702
+137,Rayapuram,West,Chamarajpete,Jagajeevanram Nagar,Chamarajpet,Bangalore Central,1695,2032,,3727
+138,Chelavadi Palya,West,Chamarajpete,Jagajeevanram Nagar,Chamarajpet,Bangalore Central,1241,1257,,2498
+139,KR Market,West,Chamarajpete,Chamarajpete,Chamarajpet,Bangalore Central,1632,1858,,3490
+140,Chamraja Pet,West,Chamarajpete,Chamarajpete,Chamarajpet,Bangalore Central,2081,2112,,4193
+141,Azad Nagar,West,Chamarajpete,Chamarajpete,Chamarajpet,Bangalore Central,2373,2684,,5057
+142,Sunkenahalli,South,Chikpete,Kempegowda Nagar,Chickpet,Bangalore South,3662,3844,1,7507
+143,Vishveshwara Puram,South,Chikpete,Kempegowda Nagar,Chickpet,Bangalore South,2831,2876,,5707
+144,Siddapura,South,Chikpete,Hombegowda Nagar,Chickpet,Bangalore South,1661,1766,,3427
+145,Hombegowda Nagar,South,Chikpete,Hombegowda Nagar,Chickpet,Bangalore South,2401,2718,,5119
+146,Lakkasandra,South,BTM Layout,BTM Layout,B.T.M. Layout,Bangalore South,1764,2025,,3789
+147,Adugodi,South,BTM Layout,Koramangala,B.T.M. Layout,Bangalore South,1803,2189,,3992
+148,Ejipura,South,BTM Layout,Koramangala,B.T.M. Layout,Bangalore South,2966,3413,,6379
+149,Varthur,Mahadevapura,Mahadevapura,White Field,Mahadevapura,Bangalore Central,2861,3051,,5912
+150,Bellanduru,Mahadevapura,Mahadevapura,Maarathahalli,Mahadevapura,Bangalore Central,2917,3065,,5982
+151,Koramangala,South,BTM Layout,Koramangala,B.T.M. Layout,Bangalore South,2522,2724,,5246
+152,Suddagunte Palya,South,BTM Layout,BTM Layout,B.T.M. Layout,Bangalore South,2049,2391,1,4441
+153,Jayanagar,South,Chikpete,Hombegowda Nagar,Chickpet,Bangalore South,3366,3693,1,7060
+154,Basavanagudi,South,Basavanagudi,Basavanagudi,Basavanagudi,Bangalore South,5262,5412,,10674
+155,Hanumanth Nagar,South,Basavanagudi,Basavanagudi,Basavanagudi,Bangalore South,2492,2630,,5122
+156,Sri Nagar,South,Basavanagudi,Girinagar,Basavanagudi,Bangalore South,2612,3022,1,5635
+157,Gali Anjenaya Temple Ward,South,Vijay Nagar,Gaali Anjaneya Temple,ViJayanagar,Bangalore South,1103,1251,1,2355
+158,Deepanjali Nagar,South,Vijay Nagar,Gaali Anjaneya Temple,ViJayanagar,Bangalore South,2309,2671,1,4981
+159,Kengeri,Rajarajeswari Nagar,Kengeri,Kengeri,Yeshwantpura,Bangalore North,2657,3022,,5679
+160,Raja Rajeshawari Nagar,Rajarajeswari Nagar,Rajarajeshwari Nagar,Rajarajeshwari Nagar,Rajarajeswari Nagar,Bangalore North,4228,4915,,9143
+161,Hosakerehalli,South,Padmanabh Nagar,Padmanabh Nagar,Padmanaba Nagar,Bangalore South,2653,2989,,5642
+162,Giri Nagar,South,Basavanagudi,Girinagar,Basavanagudi,Bangalore South,4682,4947,1,9630
+163,Katriguppe,South,Basavanagudi,Girinagar,Basavanagudi,Bangalore South,4147,4315,,8462
+164,Vidya Peeta Ward,South,Basavanagudi,Basavanagudi,Basavanagudi,Bangalore South,3065,3228,,6293
+165,Ganesh Mandir Ward,South,Padmanabh Nagar,Padmanabh Nagar,Padmanaba Nagar,Bangalore South,2325,2385,,4710
+166,Kari Sandra,South,Padmanabh Nagar,Banashankari,Padmanaba Nagar,Bangalore South,2301,2218,,4519
+167,Yediyur,South,Padmanabh Nagar,Banashankari,Padmanaba Nagar,Bangalore South,2972,3126,,6098
+168,Pattabhi Ram Nagar,South,Jayanagar,Jayanagar,Jayanagar,Bangalore South,3187,3318,,6505
+169,Byra Sandra,South,Jayanagar,Jayanagar,Jayanagar,Bangalore South,2938,2925,,5863
+170,Jayanagar East,South,Jayanagar,Jayanagar,Jayanagar,Bangalore South,2170,2388,,4558
+171,Gurappana Palya,South,Jayanagar,Jayanagar,Jayanagar,Bangalore South,2256,2755,,5011
+172,Madivala,South,BTM Layout,BTM Layout,B.T.M. Layout,Bangalore South,1891,2300,1,4192
+173,Jakka Sandra,South,BTM Layout,Koramangala,B.T.M. Layout,Bangalore South,1237,1841,,3078
+174,HSR Layout,Bommanahalli,Bommanahalli,Bommanahalli,Bommanahalli,Bangalore South,2794,3289,3,6086
+175,Bommanahalli,Bommanahalli,Bommanahalli,Bommanahalli,Bommanahalli,Bangalore South,1992,2469,,4461
+176,BTM Layout,South,BTM Layout,BTM Layout,B.T.M. Layout,Bangalore South,2987,3312,1,6300
+177,JP Nagar,South,Jayanagar,J.P Nagar,Jayanagar,Bangalore South,2774,2723,,5497
+178,Sarakki,South,Jayanagar,J.P Nagar,Jayanagar,Bangalore South,2789,2850,3,5642
+179,Shakambari Narar,South,Jayanagar,J.P Nagar,Jayanagar,Bangalore South,3196,3221,,6417
+180,Banashankari Temple Ward,South,Padmanabh Nagar,Banashankari,Padmanaba Nagar,Bangalore South,2034,1984,,4018
+181,Kumara Swamy Layout,South,Padmanabh Nagar,Banashankari,Padmanaba Nagar,Bangalore South,3281,3687,1,6969
+182,Padmanabha Nagar,South,Padmanabh Nagar,Padmanabh Nagar,Padmanaba Nagar,Bangalore South,2894,3141,,6035
+183,Chikkala Sandra,South,Padmanabh Nagar,Padmanabh Nagar,Padmanaba Nagar,Bangalore South,2866,3124,,5990
+184,Uttarahalli,Bommanahalli,Bengaluru South,Uttarahalli,Bangalore South,Bangalore South,3528,3928,1,7457
+185,Yelchenahalli,Bommanahalli,Bengaluru South,Uttarahalli,Bangalore South,Bangalore South,2419,2906,,5325
+186,Jaraganahalli,Bommanahalli,Bommanahalli,Arakere,Bommanahalli,Bangalore South,1488,1832,,3320
+187,Puttenahalli,Bommanahalli,Bommanahalli,Arakere,Bommanahalli,Bangalore South,2741,3097,,5838
+188,Bilekhalli,Bommanahalli,Bommanahalli,Arakere,Bommanahalli,Bangalore South,2649,2980,1,5630
+189,Honga Sandra,Bommanahalli,Bommanahalli,Bommanahalli,Bommanahalli,Bangalore South,1743,2312,1,4056
+190,Mangammana Palya,Bommanahalli,Bommanahalli,Bommanahalli,Bommanahalli,Bangalore South,1897,2475,,4372
+191,Singa Sandra,Bommanahalli,Bengaluru South,Begur,Bommanahalli,Bangalore South,2085,2439,,4524
+192,Begur,Bommanahalli,Bengaluru South,Begur,Bangalore South,Bangalore South,3899,4218,1,8118
+193,Arakere,Bommanahalli,Bommanahalli,Arakere,Bommanahalli,Bangalore South,2990,3338,1,6329
+194,Gottigere,Bommanahalli,Bengaluru South,Kottanooru,Bangalore South,Bangalore South,3074,3191,,6265
+195,Konankunte,Bommanahalli,Bengaluru South,Kottanooru,Bangalore South,Bangalore South,3340,3877,,7217
+196,Anjanapura,Bommanahalli,Bengaluru South,Kottanooru,Bangalore South,Bangalore South,2452,2637,,5089
+197,Vasanthpura,Bommanahalli,Bengaluru South,Uttarahalli,Bangalore South,Bangalore South,3802,4309,1,8112
+198,Hemmigepura,Rajarajeswari Nagar,Kengeri,Kengeri,Yeshwantpura,Bangalore North,2861,3242,,6103
