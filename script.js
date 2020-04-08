@@ -27,13 +27,13 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
 function getColor(d) {
-  return d > 60 ? '#fde725' :
-         d > 40 ? '#8fd744' :
+  return d > 60  ? '#fde725' :
+         d > 40  ? '#8fd744' :
          d > 20  ? '#35b779' :
          d > 10  ? '#20908d' :
-         d > 5  ? '#31688e' :
-         d > 2.5   ? '#443a83' :
-         d > 0.5   ? '##440154' :
+         d > 5   ? '#31688e' :
+         d > 2.5 ? '#443a83' :
+         d > 0.5 ? '#440154' :
                     '#FFEDA0';
 }
 
@@ -91,7 +91,7 @@ info.onAdd = function (map) {
 // Edit info box text and variables (such as elderly density 2014) to match those in your GeoJSON data
 info.update = function (props) {
   this._div.innerHTML = '<h4>Bengaluru City<br />Population of Elderly in 2014</h4>' +  (props ?
-    '<b>' + props.Ward_Name + '</b><br />' + props.Total + ' Senior Citizens'
+    '<b>' + props.Ward_Name + props.Ward_Area + 'hectares''</b><br />' + props.Total + ' Senior Citizens' '</b><br />' + props.Elderly_Density + 'Density of Senior Citizens per Ward'
     : 'Hover over a Ward');
 };
 info.addTo(map);
