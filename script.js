@@ -1,7 +1,7 @@
 // Edit the center point and zoom level
 var map = L.map('map', {
   center: [12.9761232,77.5918883],
-  zoom: 11.5  ,
+  zoom: 12  ,
   minZoom : 11,
   scrollWheelZoom: true
 });
@@ -27,13 +27,13 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
 function getColor(d) {
-  return d > 50 ? '#800026' :
-         d > 40 ? '#BD0026' :
-         d > 30  ? '#E31A1C' :
-         d > 10  ? '#FC4E2A' :
-         d > 5  ? '#FD8D3C' :
-         d > 2.5   ? '#FEB24C' :
-         d > 0.5   ? '#FED976' :
+  return d < 60 ? '#fde725' :
+         d < 40 ? '#8fd744' :
+         d < 20  ? '#35b779' :
+         d < 10  ? '#20908d' :
+         d < 5  ? '#31688e' :
+         d < 2.5   ? '#443a83' :
+         d < 0.5   ? '##440154' :
                     '#FFEDA0';
 }
 
