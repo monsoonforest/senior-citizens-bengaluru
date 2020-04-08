@@ -6,7 +6,7 @@ var map = L.map('map', {
   scrollWheelZoom: true
 });
 
-new L.tileLayer('https://{s}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey={apikey}', {
+new L.tileLayer('https://{s}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   apikey: '<your apikey>',var positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
         attribution: '©OpenStreetMap, ©CartoDB'
@@ -17,9 +17,6 @@ var positronLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_l
         pane: 'labels'
 }).addTo(map);
 
-var geojson = L.geoJson(GeoJsonData, geoJsonOptions).addTo(map);
-  
-});
 
 // Edit links to your GitHub repo and data source credit
 map.attributionControl
