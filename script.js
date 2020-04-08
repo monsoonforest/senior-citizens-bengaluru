@@ -91,7 +91,7 @@ info.onAdd = function (map) {
 // Edit info box text and variables (such as elderly density 2014) to match those in your GeoJSON data
 info.update = function (props) {
   this._div.innerHTML = '<h4>Bengaluru City<br />Population of Elderly in 2014</h4>' +  (props ?
-    '<b>' + props.Ward_Name + props.Ward_Area + 'hectares' + '</b><br />' + props.Total + ' Senior Citizens'
+    '<b>' + props.Ward_Name + '</b><br />'  + props.Math.round(Ward_Area) + ' Acres' +  props.Total + ' Senior Citizens' + props.Elderly_Density + 'Elderly Density persons per acre'
     : 'Hover over a Ward');
 };
 info.addTo(map);
