@@ -101,7 +101,7 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [60 ,40 ,30 ,10 ,5  ,2.5,0.5],
+    grades = [0.5, 2.5, 5, 10, 30, 40, 60],
     labels = ['<strong> Senior Citizens Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
