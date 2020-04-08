@@ -19,7 +19,11 @@ map.attributionControl
 map.attributionControl.addAttribution('Population data &copy; <a href="https://eci.gov.in/">ECI India </a>');
 
 // // Basemap layer
-new L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+new L.tileLayer(
+
+//  'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+
+'https://{s}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png' {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 }).addTo(map);
 
@@ -29,7 +33,7 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
   geoJsonLayer = L.geoJson(data, {
     style: style,
     onEachFeature: onEachFeature
-  })
+  }).addTo(map);
 });
 
 
