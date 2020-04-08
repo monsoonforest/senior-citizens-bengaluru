@@ -72,7 +72,7 @@ function highlightFeature(e) {
   layer.setStyle({
     weight: 4,
     color: 'black',
-    fillOpacity: 0.7
+    fillOpacity: 0.8
   });
   info.update(layer.feature.properties);
 }
