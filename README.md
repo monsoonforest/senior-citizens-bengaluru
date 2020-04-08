@@ -1,51 +1,17 @@
-# leaflet-map-polygon-hover
-Leaflet thematic polygon (choropleth) map, with hover info window, using GeoJSON data
+# MAP OF SENIOR CITIZEN DENSITY IN BENGALURU, INDIA
+A thematic map of senior citizen (>60 years old) density at the ward administrative level in Bengaluru city.
 
-## Demo
+Site is hosted on <a href="https://pages.github.com/" rel="nofollow"> GitHub</a>
+
+## Data and layers
+- Senior citizen population sourced from <a href="https://ceokarnataka.kar.nic.in/" rel="nofollow"> Chief Electoral Officer Karnataka</a>
+- Ward polygons sourced from <a href="http://opencity.in/data/bbmp-wards" rel="nofollow"> Open City; Urban Data Portal</a>
+
+
+## Credits and Demo
+- Leaflet choropleth tutorial (with US state population density example): http://leafletjs.com/examples/choropleth.html
 - https://datavizforall.github.io/leaflet-map-polygon-hover/index.html
 
-## Benefits
-- This GeoJSON version is simpler for novices to understand, since they can create and join GeoJSON data file in MapShaper.org
-- Works in iOS and Android mobile devices
-
-## Compare with
-- Standard LeafletJS choropleth tutorial http://leafletjs.com/examples/choropleth.html (which draws data from .js file with declared variable, and does not work on mobile devices), and similar version http://github.com/jackdougherty/leaflet-map-polygon-hover-from-js/index.html
-
-## Credits
-- Leaflet choropleth tutorial (with US state population density example): http://leafletjs.com/examples/choropleth.html
-- Thanks for reset highlight solution http://stackoverflow.com/questions/30524035/geojson-getjson-and-remove-higlight-mouse-out-on-leaflet
-- Thanks for code functions @alvinschang Connecticut Mirror http://ctmirror.org
-- Thanks for code improvements @ilyankou
-
-## Create your own
-
-See tutorial in the Leaflet Template section of *Data Visualization for All* book http://DataVizForAll.org
-
-####General overview of steps below
-- Join a GeoJSON polygon map with spreadsheet data
-- Modify color ranges and info box text & variables as needed
-- Upload all files to a forked or new GitHub repository, create GitHub pages branch for live web host
-
-####Detailed steps:
-- Start with GeoJSON polygon map with no numerical data, such as: ct-towns-borders.geojson
-- Import polygon map into http://MapShaper.org. Simplify to reduce size as needed.
-- Export as CSV to create spreadsheet of polygon names. In this example, column header is "town"
-- Open CSV with any spreadsheet tool. Insert columns of data into the CSV sheet. Use VLOOKUP function if needed.
-- Save CSV with new name: ct-towns.csv
-- Import ct-towns.csv as second layer into MapShaper.org.
-- Use the drop-down to select the polygon map (ct-towns-borders.geojson) as the active, displayed layer.
-- Click the Console and enter command to join the CSV table to the GeoJSON polygon
-  ```
-  -join ct-towns.csv keys=town,town
-  ```
-- Export the newly joined map with a new filename in GeoJSON format: ct-towns-density.json)
-- Change the file name suffix from .json to .geojson to avoid confusion
-- Fork this GitHub repository, or create your own, with these files (or equivalent):
-  - index.html
-  - script.js
-  - style.css
-  - ct-towns-density.geojson  (the data file)
-
-- in index.html, adjust the reference to the data file
-- in script.js, adjust the hover info box text and references as needed
-- in script.js, Adjust the ranges with http://colorbrewer.org
+## Collaborators
+- <a href="https://github.com/pvnkmrksk"> Pavan Kumar Kaushik</a>
+- <a href="https://sites.google.com/urbanmorph.com/urbanmorph/health"> Sathya Sankaran and his team at Urban Morph</a>

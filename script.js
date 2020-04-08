@@ -1,18 +1,19 @@
 // Edit the center point and zoom level
 var map = L.map('map', {
   center: [12.9761232,77.5918883],
-  zoom: 11  ,
+  zoom: 11.5  ,
+  minZoom : 11,
   scrollWheelZoom: true
 });
 
 // Edit links to your GitHub repo and data source credit
 map.attributionControl
-.setPrefix('View <a href="http://github.com/jackdougherty/leaflet-map-polygon-hover">open-source code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+.setPrefix('View <a href="https://github.com/monsoonforest/senior-citizens-bengaluru">open-source code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 map.attributionControl.addAttribution('Population data &copy; <a href="https://eci.gov.in/">ECI India </a>');
 
 // Basemap layer
-new L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+new L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 }).addTo(map);
 
 // Edit to upload GeoJSON data file from your local directory
@@ -45,6 +46,11 @@ function style(feature) {
     color: 'black',
     fillOpacity: 0.6
   };
+}
+
+// This functions zooms to the ward
+function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
 }
 
 // This highlights the layer on hover, also for mobile
@@ -82,16 +88,16 @@ info.onAdd = function (map) {
   return this._div;
 };
 
-// Edit info box text and variables (such as props.density2010) to match those in your GeoJSON data
+// Edit info box text and variables (such as elderly density 2014) to match those in your GeoJSON data
 info.update = function (props) {
-  this._div.innerHTML = '<h4>Bengaluru City<br />Population of Elderly 2014</h4>' +  (props ?
+  this._div.innerHTML = '<h4>Bengaluru City<br />Population of Elderly in 2014</h4>' +  (props ?
     '<b>' + props.Ward_Name + '</b><br />' + props.Total + ' Senior Citizens'
     : 'Hover over a Ward');
 };
 info.addTo(map);
 
 // Edit grades in legend to match the ranges cutoffs inserted above
-// In this example, the last grade will appear as 5000+
+// In this example, the last grade will appear as 50+
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
