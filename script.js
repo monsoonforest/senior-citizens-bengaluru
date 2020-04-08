@@ -37,19 +37,6 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
   })
 });
 
-var rrptstyl = {
-    "color": "#ff7800",
-    "weight": 5,
-    "opacity": 0.65
-};
-
-$.getJSON("relief-riders.geojson", function (data) {
-  geoJsonLayer = L.geoJson(data, {
-    style: rrptstyl,
-    onEachFeature: onEachFeature
-  })
-});
-
 
 
 L.geoJSON(myLines, {
