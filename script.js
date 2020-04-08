@@ -34,10 +34,6 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 
 
 
-L.geoJSON(myLines, {
-    style: myStyle
-}).addTo(map);
-
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
 function getColor(d) {
