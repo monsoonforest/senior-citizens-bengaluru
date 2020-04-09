@@ -38,12 +38,22 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 });
 
 $.getJSON("relief-riders.geojson", function (data) {
-  geoJsonLayer = L.geoJson(data, {
-    style: style,
-    onEachFeature: onEachFeature
-  }).addTo(map);
-});
+  var geoJsonLayer = L.geoJson(data, {
+        pointToLayer: function( feature, latlng) {
+          return L.circleMarker(latlng, {
+            radius: 6,
+            fillColor: 'blue',
+            color: 'blue',
+            weight: 2,
+            opacity: 1,
+            fillOpacity: 1
+          }).bindPopup(feature.properties.Name + '<br>' + feature.properties.description); // replace last term with property data labels to display from GeoJSON file
+        }
+      }).addTo(map); // display by default
 
+      controlLayers.addOverlay(geoJsonLayer, 'RELIEF RIDERS OF BANGALORE');
+
+    });
 
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
