@@ -22,8 +22,8 @@ map.attributionControl.addAttribution('Population data &copy; <a href="https://e
 new L.tileLayer(
 
 //  'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-  attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 
@@ -38,16 +38,31 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
+// FOR VIRIDIS COLOUR SCHEME
+// function getColor(d) {
+//   return d > 60  ? '#440154' :
+//          d > 40  ? '#443a83' :
+//          d > 20  ? '#31688e' :
+//          d > 10  ? '#20908d' :
+//          d > 5   ? '#35b779' :
+//          d > 2.5 ? '#8fd744' :
+//          d > 0.5 ? '#fde725' :
+//                     '#FFEDA0';
+// }
+
+// FOR MAGMA COLOUR SCHEME
 function getColor(d) {
-  return d > 60  ? '#440154' :
-         d > 40  ? '#443a83' :
-         d > 20  ? '#31688e' :
-         d > 10  ? '#20908d' :
-         d > 5   ? '#35b779' :
-         d > 2.5 ? '#8fd744' :
-         d > 0.5 ? '#fde725' :
+  return d > 50  ? '#fcfdbf' :
+         d > 40  ? '#feaf77' :
+         d > 30  ? '#f1605d' :
+         d > 20  ? '#fde725' :
+         d > 10  ? '#b63679' :
+         d > 5   ? '#721f81' :
+         d > 2.5 ? '#2d115f' :
+         d > 0.5 ? '#000004' :
                     '#FFEDA0';
 }
+
 
 // Edit the getColor property to match data column header in your GeoJson file
 function style(feature) {
@@ -55,8 +70,8 @@ function style(feature) {
     fillColor: getColor(feature.properties.Elderly_Density),
     weight: 1,
     opacity: 1,
-    color: 'black',
-    fillOpacity: 0.4
+    color: 'white',
+    fillOpacity: 0.67
   };
 }
 
@@ -71,8 +86,8 @@ function highlightFeature(e) {
   var layer = e.target;
   layer.setStyle({
     weight: 4,
-    color: 'black',
-    fillOpacity: 0.8
+    color: 'white',
+    fillOpacity: 1
   });
   info.update(layer.feature.properties);
 }
@@ -113,7 +128,7 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0.5, 2.5, 5, 10, 30, 40, 60],
+    grades = [0.5, 2.5, 5, 10, 30, 40, 50],
     labels = ['<strong> Senior Citizens Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
