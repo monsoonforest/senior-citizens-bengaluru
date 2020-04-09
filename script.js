@@ -47,7 +47,7 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
-          return L.Marker(latlng)
+          return L.marker(latlng)
           .bindPopup(feature.properties.Name + '<br>' + feature.properties.description);
         }
       }).addTo(map); // display by default
