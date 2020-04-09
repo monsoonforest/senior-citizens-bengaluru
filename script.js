@@ -122,7 +122,7 @@ info.update = function (props) {
     : 'Hover over a Ward');
 };
 
-<b></b>
+
 info.addTo(map);
 
 // Edit grades in legend to match the ranges cutoffs inserted above
