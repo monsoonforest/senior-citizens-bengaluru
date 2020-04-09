@@ -6,11 +6,11 @@ var map = L.map('map', {
   scrollWheelZoom: true
 });
 
-// layer controls
-var controlLayers = L.control.layers( null, null, {
-      position: "topleft",
-      collapsed: false // false = open by default
-    }).addTo(map);
+// // layer controls
+// var controlLayers = L.control.layers( null, null, {
+//       position: "topleft",
+//       collapsed: false // false = open by default
+//     }).addTo(map);
 
 // new L.tileLayer('https://{s}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png', {
 //   attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -47,18 +47,10 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
-          return L.circleMarker(latlng, {
-            radius: 4,
-            fillColor: '#a0f904',
-            color: 'black',
-            opacity:1,
-            fillOpacity: 1,
-            weight: 1
-          }).bindPopup(feature.properties.Name + '<br>' + feature.properties.description); // replace last term with property data labels to display from GeoJSON file
+          return L.Marker(latlng)
+          .bindPopup(feature.properties.Name + '<br>' + feature.properties.description);
         }
       }).addTo(map); // display by default
-
-      controlLayers.addOverlay(geoJsonLayer, '<b>RELIEF RIDERS OF BANGALORE</b><br>click on circle for info');
 
     });
 
