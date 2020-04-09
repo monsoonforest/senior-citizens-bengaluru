@@ -24,7 +24,6 @@ new L.tileLayer(
 //  'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
 ('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-subdomains: 'abcd',
   ext: 'png'
 }).addTo(map);
 
@@ -54,7 +53,7 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 
 // FOR MAGMA COLOUR SCHEME
 function getColor(d) {
-  return d > 50  ? '#fcfdbf' :
+  return d > 60  ? '#fcfdbf' :
          d > 40  ? '#feaf77' :
          d > 30  ? '#f1605d' :
          d > 20  ? '#fde725' :
@@ -132,7 +131,7 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0.5, 2.5, 5, 10, 30, 40, 50],
+    grades = [0.5, 2.5, 5, 10, 30, 40, 60],
     labels = ['<strong> Senior Citizens Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
