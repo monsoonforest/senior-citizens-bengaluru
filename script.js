@@ -8,7 +8,7 @@ var map = L.map('map', {
 
 // layer controls
 var controlLayers = L.control.layers( null, null, {
-      position: "topleft",
+      position: "topright",
       collapsed: false // false = open by default
     }).addTo(map);
 
@@ -47,12 +47,12 @@ $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
           return L.circleMarker(latlng, {
-            radius: 6,
-            fillColor: 'blue',
-            color: 'blue',
-            weight: 2,
-            opacity: 1,
-            fillOpacity: 1
+            icon: 'bicycle',
+            borderColor: '#b3334f',
+            textColor: '#b3334f'
+            weight: 2
+            // opacity: 1,
+            // fillOpacity: 1
           }).bindPopup(feature.properties.Name + '<br>' + feature.properties.description); // replace last term with property data labels to display from GeoJSON file
         }
       }).addTo(map); // display by default
