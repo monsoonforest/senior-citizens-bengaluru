@@ -34,6 +34,16 @@ new L.tileLayer(
   ext: 'png'
 }).addTo(map);
 
+
+// Edit to upload GeoJSON data file from your local directory
+$.getJSON("bengaluru-wards-joined.geojson", function (data) {
+  geoJsonLayer = L.geoJson(data, {
+    style: style,
+    onEachFeature: onEachFeature
+  }).addTo(map);
+});
+
+
 $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
@@ -43,7 +53,7 @@ $.getJSON("relief-riders.geojson", function (data) {
             color: 'black',
             opacity:1,
             fillOpacity: 1,
-            weight: 2
+            weight: 1
           }).bindPopup(feature.properties.Name + '<br>' + feature.properties.description); // replace last term with property data labels to display from GeoJSON file
         }
       }).addTo(map); // display by default
@@ -53,13 +63,7 @@ $.getJSON("relief-riders.geojson", function (data) {
     });
 
 
-// Edit to upload GeoJSON data file from your local directory
-$.getJSON("bengaluru-wards-joined.geojson", function (data) {
-  geoJsonLayer = L.geoJson(data, {
-    style: style,
-    onEachFeature: onEachFeature
-  }).addTo(map);
-});
+
 
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
