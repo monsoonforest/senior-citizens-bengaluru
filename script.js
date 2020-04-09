@@ -88,8 +88,8 @@ function highlightFeature(e) {
   var layer = e.target;
   layer.setStyle({
     weight: 4,
-    color: 'white',
-    fillOpacity: 0.5
+    color: 'black',
+    fillOpacity: 0.3
   });
   info.update(layer.feature.properties);
 }
