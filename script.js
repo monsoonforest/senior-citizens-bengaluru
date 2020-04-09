@@ -22,8 +22,9 @@ map.attributionControl.addAttribution('Population data &copy; <a href="https://e
 new L.tileLayer(
 
 //  'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
-  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    subdomains: 'abcd',
 }).addTo(map);
 
 
@@ -71,7 +72,7 @@ function style(feature) {
     weight: 1,
     opacity: 1,
     color: 'white',
-    fillOpacity: 0.67
+    fillOpacity: 0.6
   };
 }
 
@@ -86,7 +87,7 @@ function highlightFeature(e) {
   var layer = e.target;
   layer.setStyle({
     weight: 4,
-    color: 'white',
+    color: 'black',
     fillOpacity: 1
   });
   info.update(layer.feature.properties);
