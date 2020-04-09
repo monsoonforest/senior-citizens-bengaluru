@@ -39,7 +39,7 @@ $.getJSON("relief-riders.geojson", function (data) {
         pointToLayer: function( feature, latlng) {
           return L.circleMarker(latlng, {
             radius: 4,
-            fillColor: 'green',
+            fillColor: '#a0f904',
             color: 'black',
             opacity:1,
             fillOpacity: 1,
