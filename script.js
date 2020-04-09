@@ -47,15 +47,17 @@ $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
           return L.circleMarker(latlng, {
-            radius: 6,
-            fillColor: 'white',
+            radius: 4,
+            fillColor: 'green',
             color: 'black',
+            opacity:1,
+             fillOpacity: 1,
             weight: 2
           }).bindPopup(feature.properties.Name + '<br>' + feature.properties.description); // replace last term with property data labels to display from GeoJSON file
         }
       }).addTo(map); // display by default
 
-      controlLayers.addOverlay(geoJsonLayer, '<b>RELIEF RIDERS OF BANGALORE</b>');
+      controlLayers.addOverlay(geoJsonLayer, '<b>RELIEF RIDERS OF BANGALORE</b><br>click on circle for info');
 
     });
 
