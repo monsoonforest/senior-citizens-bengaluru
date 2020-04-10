@@ -101,12 +101,17 @@ function resetHighlight(e) {
   info.update();
 }
 
+function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+}
+
 // This instructs highlight and reset functions on hover movement
 function onEachFeature(feature, layer) {
   layer.on({
     mouseover: highlightFeature,
     mouseout: resetHighlight,
-    click: highlightFeature
+    click: highlightFeature,
+    click: zoomToFeature
   });
 }
 
@@ -161,7 +166,7 @@ legend.onAdd = function (map) {
     to = grades[i + 1];
     labels.push(
       '<i style="background:' + getColor(from + 1) + '"></i> ' +
-      from + (to ? '&ndash;'));
+      from + (to ? '&ndash;' + to : '+'));
   }
   div.innerHTML = labels.join('<br>');
   return div;
