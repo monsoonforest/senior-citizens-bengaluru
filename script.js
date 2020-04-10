@@ -73,26 +73,24 @@ $.getJSON("relief-riders.geojson", function (data) {
 
 // FOR MAGMA COLOUR SCHEME
 function getColor(d) {
-  return d > 40  ? '#000004' :
-         d > 30  ? '#231151' :
-         d > 25  ? '#5e177f' :
-         d > 20  ? '#982c80' :
-         d > 15  ? '#d3426e' :
-         d > 10  ? '#f8765c' :
-         d > 5   ? '#febb80' :
-         d > 0.8 ? '#fcfdbf' :
-                   '#000000';
+  return d > 50  ? '#000004' :
+         d > 40  ? '#3b0f6f' :
+         d > 30  ? '#8c2981' :
+         d > 20  ? '#de4969' :
+         d > 10  ? '#fe9f6d' :
+         d > 3   ? '#fcfdbf' :
+                   '#ff0000';
 }
 
 
 // Edit the getColor property to match data column header in your GeoJson file
 function style(feature) {
   return {
-    fillColor: getColor(feature.properties.Elderly_Density),
+    fillColor: getColor(feature.properties.Elderly_density_True),
     weight: 1,
     opacity: 1,
     color: 'black',
-    fillOpacity: 0.6
+    fillOpacity: 0.65
   };
 }
 
@@ -108,7 +106,7 @@ function highlightFeature(e) {
   layer.setStyle({
     weight: 4,
     color: 'red',
-    fillOpacity: 0.4
+    fillOpacity: 0.65
   });
   info.update(layer.feature.properties);
 }
@@ -139,7 +137,7 @@ info.onAdd = function (map) {
 // Edit info box text and variables (such as elderly density 2014) to match those in your GeoJSON data
 info.update = function (props) {
   this._div.innerHTML = '<h4>Bengaluru City<br />Population of Senior Citizens in 2014</h4>' +  (props ?
-    '<b>' + props.Ward_Name + '</b>' + ' '  + props.Ward_Area + ' Acres' + '<br />' + '<b>' +  props.Total + ' Senior Citizens' + '</b><br />' + props.Elderly_Density + ' Senior Citizens in an Acre'
+    '<b>' + props.Ward_Name + '</b>' + ' '  + props.Ward_Area + ' Acres' + '<br />' + '<b>' +  props.Total + ' Senior Citizens' + '</b><br />' + props.Elderly_density_True + ' Senior Citizens per Acre'
     : 'Hover over a Ward');
 };
 
@@ -151,7 +149,7 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0.8, 5, 10,15,20,25, 30, 40],
+    grades = [3, 10, 20, 30, 40, 50, 92],
     labels = ['<strong> Senior Citizens <br /> Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
