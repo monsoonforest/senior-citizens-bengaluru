@@ -3,7 +3,7 @@ body { margin:0; padding:0; }
 .info {
   padding: 6px 8px;
   font: 14px/16px Arial, Helvetica, sans-serif;
-  background: grey;
+  background: white;
   background: rgba(226,226,226,0.8);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
