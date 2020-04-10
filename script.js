@@ -73,15 +73,15 @@ $.getJSON("relief-riders.geojson", function (data) {
 
 // FOR MAGMA COLOUR SCHEME
 function getColor(d) {
-  return d > 60  ? '#fcfdbf' :
-         d > 40  ? '#feaf77' :
-         d > 30  ? '#f1605d' :
-         d > 20  ? '#fde725' :
-         d > 10  ? '#b63679' :
-         d > 5   ? '#721f81' :
-         d > 2.5 ? '#2d115f' :
-         d > 0.5 ? '#000004' :
-                    '#FFEDA0';
+  return d > 40  ? '#000004' :
+         d > 30  ? '#231151' :
+         d > 25  ? '#5e177f' :
+         d > 20  ? '#982c80' :
+         d > 15  ? '#d3426e' :
+         d > 10  ? '#f8765c' :
+         d > 5   ? '#febb80' :
+         d > 0.9 ? '#fcfdbf' :
+                   '#000000';
 }
 
 
@@ -151,7 +151,7 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0.5, 2.5, 5, 10, 30, 40, 60],
+    grades = [0.9, 5, 10,15,20,25, 30, 40],
     labels = ['<strong> Senior Citizens Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
