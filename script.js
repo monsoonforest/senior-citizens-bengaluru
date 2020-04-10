@@ -1,7 +1,7 @@
 // Edit the center point and zoom level
 var map = L.map('map', {
   center: [12.9761232,77.5918883],
-  zoom: 11.5  ,
+  zoom: 11  ,
   minZoom : 11,
   scrollWheelZoom: true
 });
@@ -115,7 +115,7 @@ $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
           return L.circleMarker(latlng, {
-            radius: 4,
+            radius: 5,
             fillColor: "#6bef2d",
             color: 'black',
             weight: 2,
