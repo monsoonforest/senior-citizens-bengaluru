@@ -94,10 +94,6 @@ function style(feature) {
   };
 }
 
-// This functions zooms to the ward
-function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
-}
 
 // This highlights the layer on hover, also for mobile
 function highlightFeature(e) {
@@ -106,7 +102,7 @@ function highlightFeature(e) {
   layer.setStyle({
     weight: 4,
     color: 'red',
-    fillOpacity: 0.65
+    fillOpacity: 0.9
   });
   info.update(layer.feature.properties);
 }
