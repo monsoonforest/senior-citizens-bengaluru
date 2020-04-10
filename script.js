@@ -61,7 +61,8 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 
 // FOR MAGMA COLOUR SCHEME
 function getColor(d) {
-  return d > 50  ? '#000004' :
+  return d > 92  ? '#000004' :
+         d > 50  ? '#000004' :
          d > 40  ? '#3b0f6f' :
          d > 30  ? '#8c2981' :
          d > 20  ? '#de4969' :
