@@ -152,7 +152,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
     grades = [0.8, 5, 10,15,20,25, 30, 40],
-    labels = ['<strong> Senior Citizens Per Acre </strong>'],
+    labels = ['<strong> Senior Citizens <br /> Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
     from = grades[i];
