@@ -61,7 +61,7 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 
 // FOR MAGMA COLOUR SCHEME
 function getColor(d) {
-  return d > 92  ? '#000004' :
+  return d < 92  ? '#000004' :
          d > 50  ? '#000004' :
          d > 40  ? '#3b0f6f' :
          d > 30  ? '#8c2981' :
@@ -159,7 +159,7 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [3, 10, 20, 30, 40, 50],
+    grades = [3, 10, 20, 30, 40, 50, 92],
     labels = ['<strong> Senior Citizens <br /> Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
