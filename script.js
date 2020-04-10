@@ -148,7 +148,7 @@ info.onAdd = function (map) {
 info.update = function (props) {
   this._div.innerHTML = '<h4>Bengaluru City<br />Population of Senior Citizens in 2014</h4>' +  (props ?
     '<b>' + props.Ward_Name + '</b>' + ' '  + props.Ward_Area + ' Acres' + '<br />' + '<b>' +  props.Total + ' Senior Citizens' + '</b><br />' + props.Elderly_density_True + ' Senior Citizens per Acre'
-    : 'Click on a Ward');
+    : 'Hover over a Ward');
 };
 
 
@@ -167,7 +167,7 @@ legend.onAdd = function (map) {
     to = grades[i + 1];
     labels.push(
       '<i style="background:' + getColor(from + 1) + '"></i> ' +
-      from + (to ? '&ndash;' + to ));
+      from + (to ? '&ndash;' + to : '+'));
   }
   div.innerHTML = labels.join('<br>');
   return div;
