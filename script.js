@@ -159,14 +159,15 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [3, 10, 20, 30, 40, 50, 92],
+    grades = [3, 10, 20, 30, 40, 50],
     labels = ['<strong> Senior Citizens <br /> Per Acre </strong>'],
     from, to;
   for (var i = 0; i < grades.length; i++) {
     from = grades[i];
     to = grades[i + 1];
     labels.push(
-      '<i style="background:' + getColor(from + 1) + '"></i> ' );
+      '<i style="background:' + getColor(from + 1) + '"></i> ' +
+      from + (to ? '&ndash;' + to : '+'));
   }
   div.innerHTML = labels.join('<br>');
   return div;
