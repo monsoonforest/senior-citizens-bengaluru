@@ -44,25 +44,6 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 });
 
 
-$.getJSON("relief-riders.geojson", function (data) {
-  var geoJsonLayer = L.geoJson(data, {
-        pointToLayer: function( feature, latlng) {
-          return L.circleMarker(latlng, {
-            radius: 4,
-            fillColor: 'green',
-            color: 'black',
-            weight: 2,
-            opacity: 1,
-            fillOpacity: 1
-          })
-          .bindPopup(feature.properties.Name + '<br>' + feature.properties.description);
-        }
-      }).addTo(map); // display by default
-
-    });
-
-
-
 
 // Edit ranges and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
@@ -128,6 +109,26 @@ function onEachFeature(feature, layer) {
     click: highlightFeature
   });
 }
+
+
+$.getJSON("relief-riders.geojson", function (data) {
+  var geoJsonLayer = L.geoJson(data, {
+        pointToLayer: function( feature, latlng) {
+          return L.circleMarker(latlng, {
+            radius: 4,
+            fillColor: "#6bef2d",
+            color: 'black',
+            weight: 2,
+            opacity: 1,
+            fillOpacity: 1
+          })
+          .bindPopup(feature.properties.Name + '<br>' + feature.properties.description);
+        }
+      }).addTo(map); // display by default
+
+    });
+
+
 
 // Creates an info box on the map
 var info = L.control();
