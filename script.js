@@ -148,7 +148,7 @@ info.onAdd = function (map) {
 info.update = function (props) {
   this._div.innerHTML = '<h4>Bengaluru City<br />Population of Senior Citizens in 2014</h4>' +  (props ?
     '<b>' + props.Ward_Name + '</b>' + ' '  + props.Ward_Area + ' Acres' + '<br />' + '<b>' +  props.Total + ' Senior Citizens' + '</b><br />' + props.Elderly_density_True + ' Senior Citizens per Acre'
-    : 'Hover over a Ward');
+    : 'Click on a Ward');
 };
 
 
@@ -162,12 +162,12 @@ legend.onAdd = function (map) {
     grades = [3, 10, 20, 30, 40, 50, 92],
     labels = ['<strong> Senior Citizens <br /> Per Acre </strong>'],
     from, to;
-  for (var i = 0; i < grades.length;) {
+  for (var i = 0; i < grades.length; i++) {
     from = grades[i];
     to = grades[i + 1];
     labels.push(
       '<i style="background:' + getColor(from + 1) + '"></i> ' +
-      from + (to ? '&ndash;' + to : '+'));
+      from + (to ? '&ndash;'));
   }
   div.innerHTML = labels.join('<br>');
   return div;
