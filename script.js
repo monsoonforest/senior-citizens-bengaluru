@@ -120,8 +120,8 @@ $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
           return L.marker(latlng, { options: {
-            iconSize:     [20, 80]
-            color='#6afc6c'
+            iconSize:     [20, 80],
+            color:'#6afc6c'
           }
           })
           .bindPopup(feature.properties.Name + '<br>' + feature.properties.description);
