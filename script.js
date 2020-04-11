@@ -74,7 +74,7 @@ function getColor(d) {
 // Edit the getColor property to match data column header in your GeoJson file
 function style(feature) {
   return {
-    fillColor: getColor(feature.properties.Elderly_density_True),
+    fillColor: getColor(feature.properties.Elderly_Density_True),
     weight: 1,
     opacity: 1,
     color: 'black',
@@ -141,7 +141,7 @@ info.onAdd = function (map) {
 // Edit info box text and variables (such as elderly density 2014) to match those in your GeoJSON data
 info.update = function (props) {
   this._div.innerHTML = '<h4>Bengaluru City<br />Population of Senior Citizens in 2014</h4>' +  (props ?
-    '<b>' + props.Ward_Name + ' ' + props.Ward_Number + '</b>' + ' '  + props.Ward_Area + ' Acres' + '<br />' + '<b>' +  props.Total + ' Senior Citizens' + '</b><br />' + props.Elderly_density_True + ' Senior Citizens per Acre'
+    '<b>' + props.Ward_Name + ' ' + props.Ward_Number + '</b>' + ' '  + props.Ward_Area + ' Acres' + '<br />' + '<b>' +  props.Total + ' Senior Citizens' + '</b><br />' + props.Elderly_Density_True + ' Senior Citizens per Acre'
     : 'Hover over a Ward');
 };
 
