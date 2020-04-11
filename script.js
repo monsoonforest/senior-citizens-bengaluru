@@ -120,7 +120,9 @@ $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
           return L.marker(latlng, { options: {
-            iconSize:     [38, 95]}
+            iconSize:     [20, 80]
+            color='#6afc6c'
+          }
           })
           .bindPopup(feature.properties.Name + '<br>' + feature.properties.description);
         }
@@ -160,7 +162,7 @@ legend.onAdd = function (map) {
   for (var i = 0; i < lower.length; i++) {
         labels.push(
             '<i style="background:' + getColor(lower[i] + 1) + '"></i> ' +
-            lower[i] + '&ndash;' + upper[i]+'<br>');
+            lower[i] + '&ndash;' + upper[i]);
    }
     div.innerHTML = labels.join('<br>');
     return div;
