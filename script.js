@@ -61,11 +61,11 @@ $.getJSON("bengaluru-wards-joined.geojson", function (data) {
 
 // FOR MAGMA COLOUR SCHEME
 function getColor(d) {
-  return d > 50  ? '#000004' :
-         d > 40  ? '#3b0f6f' :
-         d > 30  ? '#8c2981' :
-         d > 20  ? '#de4969' :
-         d > 10  ? '#fe9f6d' :
+  return d > 40  ? '#000004' :
+         d > 30  ? '#3b0f6f' :
+         d > 20  ? '#8c2981' :
+         d > 10  ? '#de4969' :
+         d > 5   ? '#fe9f6d' :
          d > 3   ? '#fcfdbf' :
                    '#ff0000';
 }
@@ -119,13 +119,8 @@ function onEachFeature(feature, layer) {
 $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
-          return L.circleMarker(latlng, {
-            radius: 5,
-            fillColor: "#6bef2d",
-            color: 'black',
-            weight: 2,
-            opacity: 1,
-            fillOpacity: 1
+          return L.Marker(latlng, { options: {
+            iconSize:     [38, 95]}
           })
           .bindPopup(feature.properties.Name + '<br>' + feature.properties.description);
         }
@@ -146,7 +141,7 @@ info.onAdd = function (map) {
 // Edit info box text and variables (such as elderly density 2014) to match those in your GeoJSON data
 info.update = function (props) {
   this._div.innerHTML = '<h4>Bengaluru City<br />Population of Senior Citizens in 2014</h4>' +  (props ?
-    '<b>' + props.Ward_Name + '</b>' + ' '  + props.Ward_Area + ' Acres' + '<br />' + '<b>' +  props.Total + ' Senior Citizens' + '</b><br />' + props.Elderly_density_True + ' Senior Citizens per Acre'
+    '<b>' + props.Ward_Name + ' ' + props.Ward_Number + '</b>' + ' '  + props.Ward_Area + ' Acres' + '<br />' + '<b>' +  props.Total + ' Senior Citizens' + '</b><br />' + props.Elderly_density_True + ' Senior Citizens per Acre'
     : 'Hover over a Ward');
 };
 
@@ -158,18 +153,16 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [3, 10, 20, 30, 40, 50, 92],
+    lower = [3, 10, 20, 30, 40],
+    upper = [10, 20, 30, 40, 75],
     labels = ['<strong> Senior Citizens <br /> Per Acre </strong>'],
     from, to;
-  for (var i = 0; i < grades.length; i++) {
-    from = grades[i];
-    to = grades[i + 1];
-    labels.push(
-      '<i style="background:' + getColor(from + 1) + '"></i> ' +
-      from + (to ? '&ndash;' + grades[i + 1] : '+'));
-  }
-  div.innerHTML = labels.join('<br>');
-  return div;
+  for (var i = 0; i < lower.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(lower[i] + 1) + '"></i> ' +
+            lower[i] + '&ndash;' + upper[i]+'<br>';
+   }
+    return div;
 };
 legend.addTo(map);
 
