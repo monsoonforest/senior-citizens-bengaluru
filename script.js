@@ -155,8 +155,8 @@ info.addTo(map);
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    lower = [3, 10, 20, 30, 40],
-    upper = [10, 20, 30, 40, 75],
+    lower = [3, 5, 10, 20, 30, 40],
+    upper = [5, 10, 20, 30, 40, 75],
     labels = ['<strong> Senior Citizens <br /> Per Acre </strong>'],
     from, to;
   for (var i = 0; i < lower.length; i++) {
