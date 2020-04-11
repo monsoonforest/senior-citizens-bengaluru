@@ -119,7 +119,7 @@ function onEachFeature(feature, layer) {
 $.getJSON("relief-riders.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
         pointToLayer: function( feature, latlng) {
-          return L.Marker(latlng, { options: {
+          return L.marker(latlng, { options: {
             iconSize:     [38, 95]}
           })
           .bindPopup(feature.properties.Name + '<br>' + feature.properties.description);
@@ -158,10 +158,11 @@ legend.onAdd = function (map) {
     labels = ['<strong> Senior Citizens <br /> Per Acre </strong>'],
     from, to;
   for (var i = 0; i < lower.length; i++) {
-        div.innerHTML +=
+        labels.push(
             '<i style="background:' + getColor(lower[i] + 1) + '"></i> ' +
-            lower[i] + '&ndash;' + upper[i]+'<br>';
+            lower[i] + '&ndash;' + upper[i]+'<br>');
    }
+    div.innerHTML = labels.join('<br>');
     return div;
 };
 legend.addTo(map);
